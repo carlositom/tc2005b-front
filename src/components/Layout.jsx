@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
+import aulifyLogo from "../assets/AulifyLogo.png";
 
 const Layout = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Layout = () => {
       <nav className="flex h-1/6 lg:h-auto lg:flex-col w-auto lg:w-1/6 items-center bg-aulify-light-blue/10 rounded-xl m-2">
         <div className="flex justify-center items-center lg:w-full w-1/4">
           <img
-            src="../src/assets/AulifyLogo.png"
+            src={aulifyLogo}
             alt=""
             className="w-full px-4 my-4 justify-center items-center"
           />

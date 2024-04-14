@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import aulifyLogo from "../assets/AulifyLogo.png";
+import aulifyBackground from "../assets/Background1.png";
 
 const Login = () => {
   const loginForm = useRef(null);
@@ -30,9 +32,9 @@ const Login = () => {
   return (
     <div
       className="bg-cover bg-no-repeat bg-center flex flex-col w-full h-screen items-center justify-center"
-      style={{ backgroundImage: `url(./src/assets/Background1.png)` }}
+      style={{ backgroundImage: `url(${aulifyBackground})` }}
     >
-      <img src="./src/assets/AulifyLogo.png" alt="" className="w-1/3" />
+      <img src={aulifyLogo} alt="" className="w-1/3" />
       <form
         onSubmit={login}
         ref={loginForm}
