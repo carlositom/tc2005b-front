@@ -11,13 +11,10 @@ const Login = () => {
     evt.preventDefault();
     const form = new FormData(loginForm.current);
 
-    const response = await fetch(
-      "http://tc2005b-env.eba-vjjfaui4.us-east-1.elasticbeanstalk.com/loginAdmin",
-      {
-        method: "POST",
-        body: form,
-      }
-    );
+    const response = await fetch(import.meta.env.VITE_LOGINADMIN, {
+      method: "POST",
+      body: form,
+    });
 
     const data = await response.json();
 

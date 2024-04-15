@@ -20,11 +20,11 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const urls = [
-          "http://tc2005b-env.eba-vjjfaui4.us-east-1.elasticbeanstalk.com/playersByLevel",
-          "http://tc2005b-env.eba-vjjfaui4.us-east-1.elasticbeanstalk.com/sessionsByDay",
-          "http://tc2005b-env.eba-vjjfaui4.us-east-1.elasticbeanstalk.com/countUsers",
-          "http://tc2005b-env.eba-vjjfaui4.us-east-1.elasticbeanstalk.com/countPlayers",
-          "http://tc2005b-env.eba-vjjfaui4.us-east-1.elasticbeanstalk.com/timePlayedAll",
+          import.meta.env.VITE_PLAYERSBYLEVEL,
+          import.meta.env.VITE_SESSIONSBYDAY,
+          import.meta.env.VITE_COUNTUSERS,
+          import.meta.env.VITE_COUNTPLAYERS,
+          import.meta.env.VITE_TIMEPLAYEDALL,
         ];
 
         const requests = urls.map((url) =>
