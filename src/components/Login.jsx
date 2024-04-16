@@ -10,19 +10,11 @@ const Login = () => {
   const login = async (evt) => {
     evt.preventDefault();
     const form = new FormData(loginForm.current);
-    /*
+
     const response = await fetch(import.meta.env.VITE_LOGINADMIN, {
       method: "POST",
       body: form,
     });
-*/
-    const response = await fetch(
-      "https://h600sa8ykb.execute-api.us-east-1.amazonaws.com/loginAdmin",
-      {
-        method: "POST",
-        body: form,
-      }
-    );
 
     const data = await response.json();
 

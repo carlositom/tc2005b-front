@@ -11,10 +11,9 @@ const Users = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "http://tc2005b-env.eba-vjjfaui4.us-east-1.elasticbeanstalk.com/getLeaderboard",
-          { headers: { Authorization: "Bearer " + token } }
-        );
+        const response = await fetch(import.meta.env.VITE_GETLEADERBOARD, {
+          headers: { Authorization: "Bearer " + token },
+        });
         if (!response.ok) {
           throw new Error("HTTP error, status = " + response.status);
         }

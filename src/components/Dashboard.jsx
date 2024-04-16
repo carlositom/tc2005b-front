@@ -19,21 +19,12 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        /*
         const urls = [
           import.meta.env.VITE_PLAYERSBYLEVEL,
           import.meta.env.VITE_SESSIONSBYDAY,
           import.meta.env.VITE_COUNTUSERS,
           import.meta.env.VITE_COUNTPLAYERS,
           import.meta.env.VITE_TIMEPLAYEDALL,
-        ];
-*/
-        const urls = [
-          "https://h600sa8ykb.execute-api.us-east-1.amazonaws.com/playersByLevel",
-          "https://h600sa8ykb.execute-api.us-east-1.amazonaws.com/sessionsByDay",
-          "https://h600sa8ykb.execute-api.us-east-1.amazonaws.com/countUsers",
-          "https://h600sa8ykb.execute-api.us-east-1.amazonaws.com/countPlayers",
-          "https://h600sa8ykb.execute-api.us-east-1.amazonaws.com/timePlayedAll",
         ];
 
         const requests = urls.map((url) =>
