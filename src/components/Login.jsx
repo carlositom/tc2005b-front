@@ -11,7 +11,7 @@ const Login = () => {
     evt.preventDefault();
     const form = new FormData(loginForm.current);
 
-    const response = await fetch(import.meta.env.VITE_LOGINADMIN, {
+    const response = await fetch(import.meta.env.VITE_API + "/loginAdmin", {
       method: "POST",
       body: form,
     });

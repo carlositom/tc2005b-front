@@ -11,9 +11,12 @@ const Users = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(import.meta.env.VITE_GETLEADERBOARD, {
-          headers: { Authorization: "Bearer " + token },
-        });
+        const response = await fetch(
+          import.meta.env.VITE_API + "/getLeaderboard",
+          {
+            headers: { Authorization: "Bearer " + token },
+          }
+        );
         if (!response.ok) {
           throw new Error("HTTP error, status = " + response.status);
         }

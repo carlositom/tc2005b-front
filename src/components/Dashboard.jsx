@@ -20,11 +20,11 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const urls = [
-          import.meta.env.VITE_PLAYERSBYLEVEL,
-          import.meta.env.VITE_SESSIONSBYDAY,
-          import.meta.env.VITE_COUNTUSERS,
-          import.meta.env.VITE_COUNTPLAYERS,
-          import.meta.env.VITE_TIMEPLAYEDALL,
+          import.meta.env.VITE_API + "/playersByLevel",
+          import.meta.env.VITE_API + "/sessionsByDay",
+          import.meta.env.VITE_API + "/countUsers",
+          import.meta.env.VITE_API + "/countPlayers",
+          import.meta.env.VITE_API + "/timePlayedAll",
         ];
 
         const requests = urls.map((url) =>
