@@ -3,7 +3,6 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 const COLORS = ["#F6BA27", "#52BEDA"];
 
 const PieGraph = (props) => {
-  console.log(props.chartData);
   return (
     <div className="w-full h-full flex lg:flex-col">
       <div className="w-1/3 h-full lg:w-full lg:h-1/3 flex flex-col items-center justify-center">

@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Dashboard from "./components/Dashboard";
 import Users from "./components/Users";
 import Protected from "./components/Protected";
+import NewAdmin from "./components/NewAdmin";
 
 function App() {
   return (
@@ -32,6 +33,14 @@ function App() {
             element={
               <Protected>
                 <Users />
+              </Protected>
+            }
+          />
+          <Route
+            path="newadmin"
+            element={
+              <Protected>
+                <NewAdmin />
               </Protected>
             }
           />

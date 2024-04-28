@@ -19,17 +19,26 @@ const Layout = () => {
             className="w-full px-4 my-4 justify-center items-center"
           />
         </div>
-        <Link to="/Dashboard" className="mx-2 my-2 text-white p-2">
+        <Link
+          to="/Dashboard"
+          className="mx-2 my-2 text-white p-2 hover:underline"
+        >
           Dashboard
         </Link>
-        <Link to="/Users" className="mx-2 my-2 text-white p-2">
+        <Link to="/Users" className="mx-2 my-2 text-white p-2 hover:underline">
           Users
+        </Link>
+        <Link
+          to="/NewAdmin"
+          className="mx-2 my-2 text-white p-2 hover:underline"
+        >
+          Add New Admin
         </Link>
         <input
           type="button"
           onClick={logout}
           value="Logout"
-          className="bg-white text-blue-900 rounded-3xl lg:mt-auto lg:mb-4 ml-auto mr-4 lg:m-auto p-2 w-auto lg:w-2/3 justify-self-end"
+          className="bg-white text-blue-900 rounded-3xl lg:mt-auto lg:mb-4 ml-auto mr-4 lg:m-auto p-2 w-auto lg:w-2/3 justify-self-end hover:underline"
         />
       </nav>
       <section className="w-full lg:w-5/6">

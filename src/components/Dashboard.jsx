@@ -51,7 +51,6 @@ const Dashboard = () => {
         setUserCount(countUsers);
         setPlayerCount(countPlayers);
         setTimePlayed(timePlayed);
-        console.log(timePlayed);
         setLoading(false);
       } catch (error) {
         console.log("Error fetching data:", error);

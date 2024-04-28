@@ -38,20 +38,22 @@ const Login = () => {
         className="py-6 flex flex-col justify-center w-1/2 items-center"
       >
         <input
-          type="text"
+          type="email"
           name="email"
-          placeholder="Username"
+          placeholder="Email"
           className="my-4 bg-white/50 placeholder-red-900 rounded-xl w-full p-4"
+          required
         />
         <input
           type="password"
           name="password"
-          placeholder="Contraseña"
+          placeholder="Password"
           className="my-4 bg-white/50 placeholder-red-900 rounded-xl w-full p-4"
+          required
         />
         <input
           type="submit"
-          value="Iniciar"
+          value="Login"
           className="my-4 bg-white text-gray-900 rounded-3xl w-1/2 p-4"
         />
       </form>
