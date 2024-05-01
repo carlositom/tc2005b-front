@@ -57,7 +57,7 @@ const Users = () => {
     <div className="flex w-full h-screen">
       <div className="p-2 w-full">
         <DataGrid
-          //getRowId={(row) => row.player_name}
+          getRowId={(row) => row.id_player}
           rows={users}
           columns={columns}
           disableRowSelectionOnClick
