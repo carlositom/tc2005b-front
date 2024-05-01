@@ -33,20 +33,15 @@ const Users = () => {
   }, []);
 
   const columns = [
-    { field: "id", headerName: "ID", flex: 1 },
+    { field: "id_player", headerName: "Game ID", flex: 1 },
     {
       field: "player_name",
       headerName: "First name",
       flex: 1,
     },
     {
-      field: "lastName",
-      headerName: "Last name",
-      flex: 1,
-    },
-    {
-      field: "age",
-      headerName: "Age",
+      field: "id_user",
+      headerName: "Aulify ID",
       flex: 1,
       type: "number",
     },
@@ -56,21 +51,13 @@ const Users = () => {
       flex: 1,
       type: "number",
     },
-    {
-      field: "fullName",
-      headerName: "Full name",
-      description: "This column has a value getter and is not sortable.",
-      flex: 1,
-      valueGetter: (params) =>
-        `${params.row.firstName || ""} ${params.row.lastName || ""}`,
-    },
   ];
 
   return (
     <div className="flex w-full h-screen">
       <div className="p-2 w-full">
         <DataGrid
-          getRowId={(row) => row.player_name}
+          //getRowId={(row) => row.player_name}
           rows={users}
           columns={columns}
           disableRowSelectionOnClick
