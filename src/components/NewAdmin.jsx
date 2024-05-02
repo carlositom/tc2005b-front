@@ -49,7 +49,7 @@ const NewAdmin = () => {
         <input
           type="submit"
           value="Agregar Administrador"
-          className="lg:my-4 bg-white text-blue-900 text-sm lg:text-xl rounded-3xl w-1/2 p-4"
+          className="lg:my-4 bg-white text-blue-900 text-sm lg:text-xl rounded-3xl w-auto lg:w-2/3 p-4"
         />
       </form>
     </div>
