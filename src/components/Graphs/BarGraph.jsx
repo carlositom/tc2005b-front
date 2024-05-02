@@ -7,17 +7,17 @@ import {
   YAxis,
 } from "recharts";
 
-const LineGraph = (props) => {
+const BarGraph = (props) => {
   return (
     <div className="w-full h-full">
       <div className="w-full h-1/3 flex flex-col items-center justify-center">
-        <h1 className="text-xl font-bold my-2 text-white">{props.title}</h1>
+        <h1 className="text-2xl font-bold my-2 text-white">{props.title}</h1>
       </div>
       <div className="charts w-full h-2/3 px-4">
         <ResponsiveContainer width="99%" height="100%">
           <BarChart data={props.chartData}>
-            <XAxis dataKey={props.dataKey} stroke="white" />
-            <YAxis stroke="white" />
+            <XAxis dataKey={props.dataKey} stroke="white" className="text-sm" />
+            <YAxis stroke="white" className="text-sm" />
             <Tooltip
               cursor={{ fill: "transparent" }}
               labelFormatter={(value) => {
@@ -44,4 +44,4 @@ function CustomTooltip({ active, payload, label }) {
   }
 }
 
-export default LineGraph;
+export default BarGraph;

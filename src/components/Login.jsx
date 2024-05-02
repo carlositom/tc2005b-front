@@ -47,13 +47,13 @@ const Login = () => {
         <input
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder="Contraseña"
           className="my-4 bg-white/50 placeholder-red-900 rounded-xl w-full p-4"
           required
         />
         <input
           type="submit"
-          value="Login"
+          value="Iniciar"
           className="my-4 bg-white text-gray-900 rounded-3xl w-1/2 p-4"
         />
       </form>

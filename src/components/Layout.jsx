@@ -21,23 +21,26 @@ const Layout = () => {
         </div>
         <Link
           to="/Dashboard"
-          className="mx-2 my-2 text-white p-2 hover:underline"
+          className="mx-2 my-2 text-white text-sm lg:text-xl p-2 hover:underline"
         >
           Dashboard
         </Link>
-        <Link to="/Users" className="mx-2 my-2 text-white p-2 hover:underline">
-          Users
+        <Link
+          to="/Users"
+          className="mx-2 my-2 text-sm text-white lg:text-xl p-2 hover:underline"
+        >
+          Usuarios
         </Link>
         <Link
           to="/NewAdmin"
-          className="mx-2 my-2 text-white p-2 hover:underline"
+          className="mx-2 my-2 text-white text-sm p-2 lg:text-xl hover:underline text-center"
         >
-          Add New Admin
+          Agregar Administrador
         </Link>
         <input
           type="button"
           onClick={logout}
-          value="Logout"
+          value="Cerrar Sesión"
           className="bg-white text-blue-900 rounded-3xl lg:mt-auto lg:mb-4 ml-auto mr-4 lg:m-auto p-2 w-auto lg:w-2/3 justify-self-end hover:underline"
         />
       </nav>

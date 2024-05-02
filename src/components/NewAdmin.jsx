@@ -29,14 +29,14 @@ const NewAdmin = () => {
         ref={addAdminForm}
         className="flex flex-col justify-center w-3/4 h-2/4 items-center bg-aulify-light-blue/10 rounded-lg p-4"
       >
-        <h1 className="my-4 text-white rounded-xl w-full p-4 text-center text-3xl">
+        <h1 className="lg:my-4 text-white rounded-xl w-full p-4 text-center text-lg lg:text-3xl">
           Input the New Admin Credentials
         </h1>
         <input
           type="email"
           name="email"
           placeholder="Email"
-          className="my-4 bg-white/50 text-white placeholder-white rounded-xl w-full p-4"
+          className="lg:my-4 bg-white/50 text-white placeholder-white rounded-xl w-full p-4"
           required
         />
         <input
@@ -49,7 +49,7 @@ const NewAdmin = () => {
         <input
           type="submit"
           value="Add New Admin"
-          className="my-4 bg-white text-blue-900 rounded-3xl w-1/2 p-4"
+          className="lg:my-4 bg-white text-blue-900 text-sm lg:text-lg rounded-3xl w-1/2 p-4"
         />
       </form>
     </div>

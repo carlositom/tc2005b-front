@@ -40,10 +40,10 @@ const Users = () => {
       flex: 1,
     },
     {
-      field: "id_user",
-      headerName: "Aulify ID",
+      field: "isUser",
+      headerName: "Aulify User",
       flex: 1,
-      type: "number",
+      type: "boolean",
     },
     {
       field: "total_score",
@@ -61,7 +61,7 @@ const Users = () => {
           rows={users}
           columns={columns}
           disableRowSelectionOnClick
-          className="bg-aulify-light-blue/10"
+          className="bg-aulify-light-blue/10 px-5"
           sx={{
             color: "white",
             borderColor: "transparent",
@@ -72,10 +72,10 @@ const Users = () => {
               borderColor: "transparent",
             },
             "& .MuiToolbar-root": {
-              color: "white",
+              color: "white !important",
             },
             "& .MuiSvgIcon-root": {
-              color: "white",
+              color: "white !important",
             },
           }}
         />

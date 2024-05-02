@@ -5,11 +5,11 @@ const COLORS = ["#F6BA27", "#52BEDA"];
 const PieGraph = (props) => {
   return (
     <div className="w-full h-full flex lg:flex-col">
-      <div className="w-1/3 h-full lg:w-full lg:h-1/3 flex flex-col items-center justify-center">
-        <h1 className="text-xl font-bold my-2 text-white">{props.title}</h1>
+      <div className="w-1/2 h-full lg:w-full lg:h-1/3 flex flex-col items-center justify-center">
+        <h1 className="text-2xl font-bold my-2 text-white">{props.title}</h1>
       </div>
 
-      <div className="charts w-2/3 h-full lg:h-2/3 lg:w-full px-0 lg:px-4">
+      <div className="charts w-1/2 h-full lg:h-2/3 lg:w-full px-0 lg:px-4">
         <ResponsiveContainer width="99%" height="100%">
           <PieChart>
             <Pie
