@@ -48,8 +48,8 @@ const NewAdmin = () => {
         />
         <input
           type="submit"
-          value="Add New Admin"
-          className="lg:my-4 bg-white text-blue-900 text-sm lg:text-lg rounded-3xl w-1/2 p-4"
+          value="Agregar Administrador"
+          className="lg:my-4 bg-white text-blue-900 text-sm lg:text-xl rounded-3xl w-1/2 p-4"
         />
       </form>
     </div>
