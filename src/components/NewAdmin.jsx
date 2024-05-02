@@ -30,7 +30,7 @@ const NewAdmin = () => {
         className="flex flex-col justify-center w-3/4 h-2/4 items-center bg-aulify-light-blue/10 rounded-lg p-4"
       >
         <h1 className="lg:my-4 text-white rounded-xl w-full p-4 text-center text-lg lg:text-3xl">
-          Input the New Admin Credentials
+          Ingrese las Credenciales del Nuevo Administrador
         </h1>
         <input
           type="email"

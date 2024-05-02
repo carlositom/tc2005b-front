@@ -33,21 +33,21 @@ const Users = () => {
   }, []);
 
   const columns = [
-    { field: "id_player", headerName: "Game ID", flex: 1 },
+    { field: "id_player", headerName: "ID", flex: 1 },
     {
       field: "player_name",
-      headerName: "First name",
+      headerName: "Nombre",
       flex: 1,
     },
     {
       field: "isUser",
-      headerName: "Aulify User",
+      headerName: "Usuario Aulify",
       flex: 1,
       type: "boolean",
     },
     {
       field: "total_score",
-      headerName: "Score",
+      headerName: "Puntaje",
       flex: 1,
       type: "number",
     },
